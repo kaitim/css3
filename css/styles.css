@@ -32,6 +32,7 @@ h2,
 h3 {
   color: var(--color-headings);
   margin-bottom: 1rem;
+  line-height: 1.1;
 }
 
 h1 {
@@ -623,7 +624,7 @@ a {
 .nav__list {
   width: 100%;
   margin: 0;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .nav__item {
@@ -633,7 +634,7 @@ a {
 
 .nav__item > a {
   color: #d2d0db;
-  transition: color .3s;
+  transition: color 0.3s;
 }
 
 .nav__item > a:hover {
@@ -641,8 +642,8 @@ a {
 }
 
 .nav__toggler {
-  opacity: .5;
-  transition: box-shadow .5s opacity .5s;
+  opacity: 0.5;
+  transition: box-shadow 0.5s opacity 0.5s;
   cursor: pointer;
 }
 
@@ -658,7 +659,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .nav__toggler {
-    display:none;
+    display: none;
   }
 
   .nav__list {
@@ -672,5 +673,32 @@ a {
 
   .nav__item {
     border: 0;
+  }
+}
+
+/* Hero */
+.hero {
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.hero__tagline {
+  font-size: 2rem;
+  color: #b9c3cf;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem;
+}
+
+.hero__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 0;
+  }
+
+  .hero__content {
+    text-align: left;
+    align-self: center;
   }
 }
