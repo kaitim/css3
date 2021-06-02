@@ -16,7 +16,7 @@
 }
 
 /* Typography */
-::section {
+::selection {
   background: var(--color-primary);
   color: #fff;
 }
@@ -109,7 +109,6 @@ a {
   font-size: 2rem;
   font-weight: 600;
   padding: 0.5rem 1rem;
-  word-spacing: nowrap;
 }
 
 .badge--primary {
@@ -210,7 +209,7 @@ a {
   padding: 2rem 4vw;
   text-align: center;
   text-transform: uppercase;
-  word-spacing: nowrap;
+  white-space: nowrap;
 }
 
 .btn .icon {
@@ -682,7 +681,7 @@ a {
 
 .nav__toggler {
   opacity: 0.5;
-  transition: box-shadow 0.5s opacity 0.5s;
+  transition: box-shadow 0.5s, opacity 0.5s;
   cursor: pointer;
 }
 
