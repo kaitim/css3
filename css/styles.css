@@ -764,6 +764,10 @@ a {
 }
 
 /* Plans block */
+.block-plans {
+  overflow-x: hidden;   /* prevent scaled child scroll bar */
+}
+
 .block-plans .grid {
   gap: 8rem 4rem;
   align-items: center;
