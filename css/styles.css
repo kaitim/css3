@@ -1,3 +1,5 @@
+@import "./normalize.css";
+
 :root {
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
@@ -765,7 +767,7 @@ a {
 
 /* Plans block */
 .block-plans {
-  overflow-x: hidden;   /* prevent scaled child scroll bar */
+  overflow-x: hidden; /* prevent scaled child scroll bar */
 }
 
 .block-plans .grid {
